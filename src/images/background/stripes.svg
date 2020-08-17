@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard Copy 11</title>
+    <g id="Artboard-Copy-11" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#F6F7F8" x="0" y="0" width="80" height="80"></rect>
+        <g id="diagonal-stripes" fill="#AECE2E" fill-rule="nonzero">
+            <polygon id="Path-2" points="0 80 80 0 40 0 0 40"></polygon>
+            <polygon id="Path-2-Copy" points="80 80 80 40 40 80"></polygon>
+        </g>
+    </g>
+</svg>
