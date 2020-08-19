@@ -54,19 +54,6 @@ const CaseStudies = props => {
           </Col>
         </Row>
         <div style={styles.thumbs}>
-          <Link style={{ textDecoration: "none" }} to="/brakes-b2c">
-            <Row>
-              <Col md={{ size: 10, offset: 1 }}>
-                <CustomCardLanding
-                  thumb={BrakesPhone}
-                  title={BrakesTitle}
-                  sub={BrakesSub}
-                  background={Kiwi}
-                  movement={"1000px"}
-                />
-              </Col>
-            </Row>
-          </Link>
           <Link style={{ textDecoration: "none" }} to="/specac-app">
             <Row>
               <Col md={{ size: 10, offset: 1 }}>
@@ -76,6 +63,19 @@ const CaseStudies = props => {
                   sub={SpecacAppSub}
                   background={Current}
                   movement={"-1000px"}
+                />
+              </Col>
+            </Row>
+          </Link>
+          <Link style={{ textDecoration: "none" }} to="/brakes-b2c">
+            <Row>
+              <Col md={{ size: 10, offset: 1 }}>
+                <CustomCardLanding
+                  thumb={BrakesPhone}
+                  title={BrakesTitle}
+                  sub={BrakesSub}
+                  background={Kiwi}
+                  movement={"1000px"}
                 />
               </Col>
             </Row>
