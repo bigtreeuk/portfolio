@@ -17,33 +17,43 @@ const NavMenu = (props) => {
       <Navbar color="none" light expand="-xl">
         <Nav style={styles.container} navbar>
           <Row>
-            <Col xs="3" style={styles.CV2}>
-              <a style={styles.CV} className="navText" href="/">
+            <Col xs={{ size: 10, offset: 1 }} style={styles.navItems}>
+              <a style={styles.navItem} className="navText" href="/">
                 Home
               </a>
-            </Col>
-            <Col xs="3" style={styles.CV2}>
+
               <a
                 target="_blank"
-                style={styles.CV}
+                style={styles.navItem}
                 className="navText"
                 href="https://www.linkedin.com/in/michaeljosephlever"
               >
                 LinkedIn
               </a>
-            </Col>
-            <Col xs="3" style={styles.CV2}>
+
               <a
-                style={styles.CV}
+                style={styles.navItem}
                 className="navText"
                 href={PDF}
                 target="_blank"
               >
                 CV
               </a>
-            </Col>
-            <Col xs="3" style={styles.CV2}>
-              <AnchorLink style={styles.CV} className="navText" href="#contact">
+
+              <a
+                target="_blank"
+                style={styles.navItem}
+                className="navText"
+                href="https://github.com/bigtreeuk"
+              >
+                GitHub
+              </a>
+
+              <AnchorLink
+                style={styles.navItem}
+                className="navText"
+                href="#contact"
+              >
                 Contact
               </AnchorLink>
             </Col>
@@ -59,24 +69,24 @@ const styles = {
     backgroundColor: "none",
     width: "100%",
     display: "flex",
+    alignItems: "stretch",
     justifyContent: "space-between",
     marginTop: "5%",
     marginBottom: "3%",
-
     borderBottom: "solid",
     borderBottomWidth: 1.5,
   },
-  CV: {
+  navItem: {
     fontSize: 20,
     color: "#383A48",
-    textDecoration: "none"
-
-  },
-  CV2: {
+    textDecoration: "none",
+    display: "flex",
     textAlign: "center",
+  },
+  navItems: {
+    display: "flex",
     marginBottom: "1%",
-
-    
+    justifyContent: "space-between",
   },
 };
 
