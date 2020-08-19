@@ -35,15 +35,27 @@ const Intro = props => {
            <Row>
              <Col style={styles.iconContainer} xs="4" lg="2">
                <img
+                 alt="Javascript logo"
                  style={styles.icons}
                  src={Javascript}
+                 title="Javascript"
                />
              </Col>
              <Col style={styles.iconContainer} xs="4" lg="2">
-               <img style={styles.icons} src={ReactIcon} />
+               <img
+                 alt="React logo"
+                 style={styles.icons}
+                 src={ReactIcon}
+                 title="React / React Native"
+               />
              </Col>
              <Col style={styles.iconContainer} xs="4" lg="2">
-               <img style={styles.icons} src={ReduxIcon} />
+               <img
+                 alt="Redux logo"
+                 style={styles.icons}
+                 src={ReduxIcon}
+                 title="Redux"
+               />
              </Col>
            </Row>
          </Container>
