@@ -80,8 +80,17 @@ const SpecacApp = (props) => {
               />
             </div>
           </Col>
+          <Col xs="12" style={styles.links}>
+              <a
+                href="https://apps.apple.com/us/app/id1526464500"
+                target="_blank"
+              >
+                <img src={AppStore} />
+              </a>
+          </Col>
           <div style={styles.linkContainer}>
-            <a style={styles.link}
+            <a
+              style={styles.link}
               className="portBody"
               target="_blank"
               href="https://www.sigmaaldrich.com/catalog/product/aldrich/z407321?lang=en&region=GB"
@@ -330,7 +339,7 @@ const styles = {
   },
 
   projectTitle: {
-    paddingTop: "15%",
+    paddingTop: "10%",
   },
   bodyProject: {
     paddingTop: "3%",
