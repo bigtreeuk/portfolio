@@ -64,7 +64,7 @@ const SpecacApp = (props) => {
           >
             <div style={styles.iframe}>
               <iframe
-                src="https://player.vimeo.com/video/450036536?autoplay=1&loop=1&muted=1 "
+                src="https://player.vimeo.com/video/450036536?autoplay=1&loop=1 "
                 frameborder="0"
                 allow="autoplay; fullscreen; loop"
                 width="234"
