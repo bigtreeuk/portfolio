@@ -19,6 +19,8 @@ import Hotjar from "../images/BrakesCaseStudy/hotjar.png";
 import Pixel1b from "../images/BrakesCaseStudy/pixel1b.png";
 import Pixel2b from "../images/BrakesCaseStudy/pixel2b.png";
 import Overflow from "../images/BrakesCaseStudy/overflow.png";
+import Background1 from "../images/hero/brakesHeader.png";
+import Logo from "../images/BrakesCaseStudy/brakesLogo.png";
 import Nav from "../components/NavMenu";
 
 
@@ -32,10 +34,13 @@ const BrakesB2C = (props) => {
           <Nav />
           <Col>
             <IntroCase
+              image={Background1}
               titleText={"Feeding the Masses"}
               subText={
                 "Rapidly iterated a food ecommerce website during the 2020 pandemic. Responded to feedback in real-time. Collaborated remotely on sprints. Mitigated a difficult user journey. Tested and pivoted rigorously."
               }
+              text="Brakes are the UK’s largest food wholesaler. They supply restaurants, pubs and more."
+              logo={Logo}
             />
           </Col>
         </Row>

@@ -1,10 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Media } from "reactstrap";
 import BodyBackgroundColor from "react-body-backgroundcolor";
-import IntroCase3 from "../components/IntroCase3";
-import Title from "../components/Title";
 import Body from "../components/Body";
-import NaturalStep from "../components/customComponents/NaturalStep";
 import Research from "../components/customComponents/Research";
 import Background from "../images/SpecacApp/circuitBG.png";
 import BackgroundResearch from "../images/SpecacApp/graphBG.png";
@@ -13,60 +10,86 @@ import Iphone1 from "../images/SpecacApp/iphone1.png";
 import Iphone2 from "../images/SpecacApp/iphone2.png";
 import XD from "../images/SpecacApp/AdobeXD.png";
 import Expo from "../images/SpecacApp/Expo.png";
-import Cardboard from "../images/SpecacApp/cardboard.png";
+import Pixel4XL from "../images/SpecacApp/pixel 4 xl mask.svg";
 import Nest from "../images/SpecacApp/nest.png";
-
+import Nav from "../components/NavMenu";
 import NavWhite from "../components/NavWhite";
 import Video from "../components/Video";
+import IntroCase from "../components/IntroCase";  
+import Title from "../components/Title";
+import SubHeader from "../components/Subheader";
 import CustomCard from "../components/CustomCard";
 import Logo from "../images/SpecacApp/logo.png";
+import AppStore from "../images/SpecacApp/appStore.svg";
+import Background1 from "../images/hero/header.png";
 
 const SpecacApp = (props) => {
   return (
     <BodyBackgroundColor backgroundColor="white">
       <Container>
         <Row>
-          <div style={styles.caseColumn2}>
-            <NavWhite />
-            <Col>
-              <div style={styles.slump}>
-                <NaturalStep
-                  title={"Print to web, web to app"}
-                  image={Iphone2}
-                  text1={"Took a concept from print to web, then web to app."}
-                  text2={"Applied UI inspiration from real-world design."}
-                  text3={"Built an Android/iOS app using React Native."}
-                  text4={"Tested and pivoted during design and production."}
-                />
-              </div>
-            </Col>
-          </div>
+          <Nav />
+          <Col>
+            <IntroCase
+              image={Background1}
+              titleText={"Print to web, web to app"}
+              subText={
+                "Took a concept from print to web, then web to app. Applied UI inspiration from real-world design. Built an Android/iOS app using React Native. Tested and pivoted during design and production."
+              }
+              text="Specac Ltd are an infrared analytical device developer and Queen’s Award winner."
+              logo={Logo}
+            />
+          </Col>
         </Row>
 
         <Row>
-          <Col style={styles.card} md={{ size: 12 }}>
-            <CustomCard
-              style={styles.card}
-              logo={Logo}
-              text="Specac Ltd are an infrared analytical device developer and Queen’s Award winner. They continue to innovate and set their sights on an ambitious growth plan."
-            />
+          <Col xs="12">
+            <div style={styles.text2}>
+              <Title text={"From an early iteration"} />
+            </div>
           </Col>
-          <Col style={styles.intro}>
-            <IntroCase3
-              titleText={"From an early iteration"}
-              image={Cardboard}
-              text1={
-                "Specac's online educational content was hugely popular. A digital everyday tool for lab analysts seemed like a positive extension of this."
-              }
-              text2={
-                "So I recreated a traditional infrared correlation chart on our website using JavaScript. Analytics showed great engagement from users."
-              }
-              text3={
-                "But this rough-and-ready tool wasn’t mobile-friendly, available offline or attractive. A mobile app seemed more useful for lab settings."
-              }
-              image={Cardboard}
-            />
+          <Col xs="12" md="12">
+            <div style={styles.text3}>
+              <SubHeader
+                text={
+                  "Due to the success of our educational online content, we decided to 'digitise' the traditional infrared lookup tool. I built a prototype using Javascript and analytics showed great engagement. So I designed and developed an app using React Native."
+                }
+              />
+            </div>
           </Col>
+          <Col
+            style={styles.smartphoneContainer}
+            xs={{ size: 10, offset: 2 }}
+            md={{ size: 4, offset: 4 }}
+          >
+            <div style={styles.iframe}>
+              <iframe
+                src="https://player.vimeo.com/video/450036536?autoplay=1&loop=1&muted=1 "
+                frameborder="0"
+                allow="autoplay; fullscreen; loop"
+                width="234"
+                height="480"
+              ></iframe>
+            </div>
+            <div style={styles.skin}>
+              <img
+                src={Pixel4XL}
+                alt="A Pixel 4 XL smartphone"
+                height="530"
+                width="auto"
+              />
+            </div>
+          </Col>
+          <div style={styles.linkContainer}>
+            <a style={styles.link}
+              className="portBody"
+              target="_blank"
+              href="https://www.sigmaaldrich.com/catalog/product/aldrich/z407321?lang=en&region=GB"
+            >
+              Click here to see a traditional wavelength-to-compound lookup
+              tool.
+            </a>
+          </div>
         </Row>
 
         <Row>
@@ -184,22 +207,21 @@ const SpecacApp = (props) => {
           </Col>
         </Row>
         <Row>
-          <Col xs="12" style={styles.lastCol}>
-            <Title text={"The outcome (pending)"} />
+          <Col xs="12">
+            <Title text={"The outcome"} />
             <Body
               text={
-                "Covid-19 paused development of the app temporarily for some months. But I’m now developing again. I am currently working on the dark mode and ensuring the app can prevent the user’s phone screen from going to sleep."
+                "The app has just been uploaded to the App Store and is under review for the Google Play Store."
               }
             />
           </Col>
-          <Col xs="12" md="12" style={styles.video}>
-            <Video
-              video={
-                "https://player.vimeo.com/video/433972955?autoplay=1&loop=1"
-              }
-              width={"250"}
-              height={"445"}
-            />
+          <Col style={styles.links}>
+            <a
+              href="https://apps.apple.com/us/app/id1526464500"
+              target="_blank"
+            >
+              <img src={AppStore} />
+            </a>
           </Col>
         </Row>
       </Container>
@@ -208,9 +230,17 @@ const SpecacApp = (props) => {
 };
 
 const styles = {
+  linkContainer: {
+    paddingTop: "4%",
+  },
+  link: {
+    color: "black",
+    textDecoration: "underline",
+  },
+  links: { paddingTop: "5%" },
   intro: {
     marginTop: "5%",
-    marginBottom: "5%"
+    marginBottom: "5%",
   },
   listPivot: {
     marginTop: "25%",
@@ -230,7 +260,14 @@ const styles = {
     marginTop: 200,
   },
 
+  text2: {
+    paddingTop: "5%",
+  },
 
+  text3: {
+    paddingTop: "2%",
+    paddingBottom: "1%",
+  },
   caseColumn2: {
     backgroundImage: `url(${Background})`,
     width: "100vw",
@@ -255,12 +292,29 @@ const styles = {
     marginRight: "-50vw",
     display: "block",
     marginTop: "20%",
-
   },
-  card:{
-    marginBottom: "15%"
+  card: {
+    marginBottom: "15%",
   },
-
+  smartphoneContainer: {
+    overflow: "hidden",
+    position: "relative",
+    height: 550,
+    width: "100%",
+    marginTop: "5%",
+  },
+  iframe: {
+    position: "absolute",
+    width: "90%",
+    height: "100%",
+    border: 0,
+    top: 40,
+  },
+  skin: {
+    position: "absolute",
+    left: 0,
+    top: 0,
+  },
   laptop: {
     width: "100%",
     paddingTop: "10%",
@@ -274,9 +328,9 @@ const styles = {
     marginBottom: "10%",
     marginTop: "10%",
   },
- 
+
   projectTitle: {
-    paddingTop: "10%",
+    paddingTop: "15%",
   },
   bodyProject: {
     paddingTop: "3%",
@@ -310,11 +364,11 @@ const styles = {
   codepen: {
     width: "100%",
     paddingTop: "10%",
-    paddingBottom: "10%"
+    paddingBottom: "10%",
   },
   video: {
-    marginBottom: "15%"
-  }
+    marginBottom: "15%",
+  },
 };
 
 export default SpecacApp;

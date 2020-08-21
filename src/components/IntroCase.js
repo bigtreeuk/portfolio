@@ -3,8 +3,8 @@ import { Container, Row, Col } from "reactstrap";
 import Title from "./Title";
 import SubHeader from "./Subheader";
 import CustomCard from "../components/CustomCard";
-import Background1 from "../images/hero/brakesHeader.png";
-import Logo from "../images/BrakesCaseStudy/brakesLogo.png";
+
+
 
 const IntroCase = (props) => {
 
@@ -13,7 +13,7 @@ const IntroCase = (props) => {
       <Row>
         <Col>
           <div style={styles.caseColumn}>
-            <img alt="brakes-hero" style={styles.hero} src={Background1} />
+            <img alt="brakes-hero" style={styles.hero} src={props.image} />
           </div>
         </Col>
         <Col xs="12">
@@ -23,7 +23,7 @@ const IntroCase = (props) => {
           </div>
         </Col>
         <Col sm={{ size: 10, offset: 1 }}>
-          <CustomCard logo={Logo} text="Brakes are the UK’s largest food wholesaler. They supply restaurants, pubs and more." />
+          <CustomCard logo={props.logo} text={props.text} />
         </Col>
       </Row>
     </Container>
@@ -48,7 +48,7 @@ const styles = {
     marginRight: "-50vw",
   },
   text: {
-
+    paddingTop: "5%"
   },
   textMob: {
     paddingBottom: "10%",

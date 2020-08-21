@@ -14,7 +14,7 @@ const IntroCase3 = (props) => {
               <Title text={props.titleText} />
             </div>
           </Col>
-          <Col style={styles.text2} xs="12" md="7">
+          <Col style={styles.text2} xs="12" md="12">
             <div style={styles.text2}>
               <SubHeader text={props.text1} />
             </div>
@@ -24,9 +24,6 @@ const IntroCase3 = (props) => {
             <div style={styles.text2}>
               <SubHeader text={props.text3} />
             </div>
-          </Col>
-          <Col style={styles.text2} md="5">
-            <img style={styles.cardboard} src={props.image} />
           </Col>
         </Row>
       </Container>
