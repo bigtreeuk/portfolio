@@ -3,7 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import "../index.css";
 import { Collapse, Navbar, Nav, NavLink } from "reactstrap";
-import PDF from "../pdf/CVMichaelLever.pdf";
+import PDF from "../pdf/MichaelLeverCV.pdf";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const NavMenu = (props) => {
