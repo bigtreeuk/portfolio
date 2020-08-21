@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from "reactstrap";
-import PDF from "../pdf/CVMichaelLever.pdf";
+import PDF from "../pdf/MichaelLeverCV.pdf";
 import '../index.css';
 import {
   Collapse,
