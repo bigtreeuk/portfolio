@@ -82,7 +82,7 @@ const SpecacApp = (props) => {
           </Col>
         </Row>
         <Row>
-          <Col xs="2" style={styles.links}>
+          <Col xs="6" md="4" lg="2" style={styles.links}>
             <a
               href="https://apps.apple.com/us/app/id1526464500"
               target="_blank"
@@ -90,7 +90,7 @@ const SpecacApp = (props) => {
               <img style={styles.linkImage} src={AppStore} />
             </a>
           </Col>
-          <Col xs="2" style={styles.links}>
+          <Col xs="6" md="4" lg="2" style={styles.links}>
             <a href="https://play.google.com/store/apps/details?id=com.Specac.InfraredFrequencyLookup&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
               <img
                 style={styles.linkImage}
@@ -237,7 +237,7 @@ const SpecacApp = (props) => {
               }
             />
           </Col>
-          <Col xs="2" style={styles.links}>
+          <Col xs="6" md="4" lg="2" style={styles.links}>
             <a
               href="https://apps.apple.com/us/app/id1526464500"
               target="_blank"
@@ -245,7 +245,7 @@ const SpecacApp = (props) => {
               <img style={styles.linkImage} src={AppStore} />
             </a>
           </Col>
-          <Col xs="2" style={styles.links}>
+          <Col xs="6" md="4" lg="2" style={styles.links}>
             <a href="https://play.google.com/store/apps/details?id=com.Specac.InfraredFrequencyLookup&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
               <img
                 style={styles.linkImage}
@@ -268,9 +268,8 @@ const styles = {
     color: "black",
     textDecoration: "underline",
   },
-  links: { paddingTop: "5%",
-},
-linkImage: {width: "100%"},
+  links: { paddingTop: "5%" },
+  linkImage: { width: "100%" },
   intro: {
     marginTop: "5%",
     marginBottom: "5%",
