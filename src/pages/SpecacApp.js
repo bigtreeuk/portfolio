@@ -80,14 +80,27 @@ const SpecacApp = (props) => {
               />
             </div>
           </Col>
-          <Col xs="12" style={styles.links}>
-              <a
-                href="https://apps.apple.com/us/app/id1526464500"
-                target="_blank"
-              >
-                <img src={AppStore} />
-              </a>
+        </Row>
+        <Row>
+          <Col xs="2" style={styles.links}>
+            <a
+              href="https://apps.apple.com/us/app/id1526464500"
+              target="_blank"
+            >
+              <img style={styles.linkImage} src={AppStore} />
+            </a>
           </Col>
+          <Col xs="2" style={styles.links}>
+            <a href="https://play.google.com/store/apps/details?id=com.Specac.InfraredFrequencyLookup&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+              <img
+                style={styles.linkImage}
+                alt="Get it on Google Play"
+                src="https://play.google.com/intl/en_gb/badges/static/images/badges/en_badge_web_generic.png"
+              />
+            </a>
+          </Col>
+        </Row>
+        <Row>
           <div style={styles.linkContainer}>
             <a
               style={styles.link}
@@ -220,16 +233,25 @@ const SpecacApp = (props) => {
             <Title text={"The outcome"} />
             <Body
               text={
-                "The app has just been uploaded to the App Store and is under review for the Google Play Store."
+                "The app has recently been uploaded to the App Store and Google Play Store. We're currently gathering success metrics."
               }
             />
           </Col>
-          <Col style={styles.links}>
+          <Col xs="2" style={styles.links}>
             <a
               href="https://apps.apple.com/us/app/id1526464500"
               target="_blank"
             >
-              <img src={AppStore} />
+              <img style={styles.linkImage} src={AppStore} />
+            </a>
+          </Col>
+          <Col xs="2" style={styles.links}>
+            <a href="https://play.google.com/store/apps/details?id=com.Specac.InfraredFrequencyLookup&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+              <img
+                style={styles.linkImage}
+                alt="Get it on Google Play"
+                src="https://play.google.com/intl/en_gb/badges/static/images/badges/en_badge_web_generic.png"
+              />
             </a>
           </Col>
         </Row>
@@ -246,7 +268,9 @@ const styles = {
     color: "black",
     textDecoration: "underline",
   },
-  links: { paddingTop: "5%" },
+  links: { paddingTop: "5%",
+},
+linkImage: {width: "100%"},
   intro: {
     marginTop: "5%",
     marginBottom: "5%",
