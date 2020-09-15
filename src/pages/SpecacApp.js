@@ -75,7 +75,7 @@ const SpecacApp = (props) => {
               <img
                 src={Pixel4XL}
                 alt="A Pixel 4 XL smartphone"
-                height="530"
+                height="535"
                 width="auto"
               />
             </div>
