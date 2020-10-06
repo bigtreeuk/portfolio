@@ -35,15 +35,6 @@ const NavMenu = (props) => {
                 CV
               </a>
 
-              <a
-                target="_blank"
-                style={styles.navItem}
-                className="navText"
-                href="https://github.com/bigtreeuk"
-              >
-                GitHub
-              </a>
-
               <AnchorLink
                 style={styles.navItem}
                 className="navText"

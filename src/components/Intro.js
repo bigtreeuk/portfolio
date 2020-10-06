@@ -21,7 +21,7 @@ const Intro = props => {
                <div style={styles.text}>
                  <SubHeader2
                    text={
-                     "I'm a front-end developer/designer based in England. Currently designing at Brakes and coding freelance."
+                     "I'm a designer/developer based in England. Currently designing at Brakes and developing freelance."
                    }
                  />
                </div>
