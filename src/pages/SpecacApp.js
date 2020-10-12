@@ -113,7 +113,19 @@ const SpecacApp = (props) => {
             </a>
           </div>
         </Row>
-
+        <Row>
+          <div style={styles.linkContainer}>
+            <a
+              style={styles.link}
+              className="portBody"
+              target="_blank"
+              href="https://www.specac.com/en/resources/infrared-frequency-tool"
+            >
+              Click here to see the Javascript prototype used to test user
+              engagement.
+            </a>
+          </div>
+        </Row>
         <Row>
           <Col style={styles.projectTitle}>
             <div>
