@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Media } from "reactstrap";
 import BodyBackgroundColor from "react-body-backgroundcolor";
-import IntroCase from "../components/IntroCase";  
+import IntroCase from "../components/IntroCase";
 import Title from "../components/Title";
 import Body from "../components/Body";
 import LockdownSlump from "../components/customComponents/LockdownSlump";
@@ -16,15 +16,13 @@ import Pixel2 from "../images/BrakesCaseStudy/pixel2.png";
 import Pixel3 from "../images/BrakesCaseStudy/pixel3.png";
 import Pixel4 from "../images/BrakesCaseStudy/pixel4.png";
 import Hotjar from "../images/BrakesCaseStudy/hotjar.png";
+import ServiceMap from "../images/BrakesCaseStudy/Example service blueprint Brakes.png";
 import Pixel1b from "../images/BrakesCaseStudy/pixel1b.png";
 import Pixel2b from "../images/BrakesCaseStudy/pixel2b.png";
 import Overflow from "../images/BrakesCaseStudy/overflow.png";
 import Background1 from "../images/hero/brakesHeader.png";
 import Logo from "../images/BrakesCaseStudy/brakesLogo.png";
 import Nav from "../components/NavMenu";
-
-
-
 
 const BrakesB2C = (props) => {
   return (
@@ -124,12 +122,37 @@ const BrakesB2C = (props) => {
           <Col xs="12">
             <Body
               text={
+                "We undertook workshops to capture and separate B2C personas, touchpoints, triggers and requirements."
+              }
+            />
+          </Col>
+
+          <Col xs="12">
+            <Body
+              text={
+                "I took a UX Specialist Certification with Akendi in 2019. Along with learning how to take a UX project from Discovery to Production, you also get a nice library of templates for Service Blueprints, Experience Maps and suchlike."
+              }
+            />
+          </Col>
+          <Col xs="12">
+            <Body
+              text={
+                "The below example shows a Service Blueprint for an unregistered B2C user who is looking for a specific product (e.g. toilet roll). One usability snag of our B2C experience was that payment would be collected by phone, after an order is placed."
+              }
+            />
+          </Col>
+          <Col xs="12">
+            <img style={styles.serviceMap} src={ServiceMap} />
+          </Col>
+        </Row>
+        <Row>
+          <Col xs="12">
+            <Body
+              text={
                 "We needed users to sign-up to add to cart. I designed a modal to activate upon this event. The user then selects delivery or click & collect but only submits email/password."
               }
             />
           </Col>
-        </Row>
-        <Row>
           <Col xs="12">
             <Body
               text={
@@ -152,6 +175,7 @@ const BrakesB2C = (props) => {
             <img style={styles.mobile} src={Pixel4} />
           </Col>
         </Row>
+
         <Row style={styles.waveRow}>
           <div style={styles.caseColumn3}>
             <Col xs="12">
@@ -221,18 +245,15 @@ const BrakesB2C = (props) => {
   );
 };
 
-
 const styles = {
-  back: {
-
-  },
-  lastCol :{ 
+  back: {},
+  lastCol: {
     marginTop: "15%",
-    marginBottom: "10%"
+    marginBottom: "10%",
   },
   overflow: {
     width: "100%",
-    paddingTop: "5%"
+    paddingTop: "5%",
   },
   slump: {
     marginTop: 500,
@@ -251,8 +272,8 @@ const styles = {
     marginRight: "-50vw",
     display: "block",
   },
-  waveRow : {
-    marginTop: "5%"
+  waveRow: {
+    marginTop: "5%",
   },
   caseColumn3: {
     backgroundImage: `url(${BackgroundFlow})`,
@@ -274,7 +295,6 @@ const styles = {
   },
   bodyBuilding: {
     paddingTop: "15%",
-
   },
   centreText: {
     paddingTop: "3%",
@@ -286,26 +306,29 @@ const styles = {
   },
   bulletImage: {
     paddingTop: "10%",
-    width: "75%"
+    width: "75%",
   },
   monitor: {
     overflow: "hidden",
     width: "100%",
     height: "auto",
     paddingTop: "5%",
-    paddingBottom: "15%",
   },
   mobile: {
     width: "95%",
     height: "auto",
     paddingBottom: "15%",
   },
+  serviceMap: {
+    width: "95%",
+    height: "auto",
+    paddingTop: "5%",
+    paddingBottom: "5%",
+  },
   hotjar: {
     height: "auto",
     width: 60,
   },
 };
-
-
 
 export default BrakesB2C;
